@@ -13,7 +13,15 @@ export function ProductPage() {
   //console.log(requiredProduct);
   return (
     <div>
-      {requiredProduct === undefined ? <h1>unknown product</h1> : <h1>{requiredProduct.name}</h1>}
+      {requiredProduct === undefined ? (
+        <h1>unknown product</h1>
+      ) : (
+        <>
+          <h1>{requiredProduct.name}</h1>
+          <p>{requiredProduct.description}</p>
+          <p>{requiredProduct.price}</p>
+        </>
+      )}
     </div>
   );
 }
