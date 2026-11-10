@@ -10,6 +10,10 @@ export function ProductPage() {
   //console.log(params);
   const id = params.id === undefined ? undefined : parseInt(params.id);
   const requiredProduct = products.find((product) => product.id === id);
-  console.log(requiredProduct);
-  return <div> placeholder </div>;
+  //console.log(requiredProduct);
+  return (
+    <div>
+      {requiredProduct === undefined ? <h1>unknown product</h1> : <h1>{requiredProduct.name}</h1>}
+    </div>
+  );
 }
