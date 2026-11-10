@@ -14,3 +14,7 @@ export function ProductsPage() {
     </div>
   );
 }
+
+/* export function ProductsPage() {
+  return <div> placeholder for products page component </div>;
+} */

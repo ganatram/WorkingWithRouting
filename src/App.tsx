@@ -1,4 +1,4 @@
-import { Routes } from './Routes';
+/* import { Routes } from './Routes';
 import { Outlet } from 'react-router-dom';
 import { Header } from './Header';
 
@@ -9,4 +9,9 @@ export function App() {
       <Outlet />
     </>
   );
+} */
+import { Routes } from './Routes';
+
+export function App() {
+  return <Routes />;
 }
