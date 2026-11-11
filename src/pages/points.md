@@ -13,7 +13,6 @@ Search Parameters/Query parameters
   type=sometype // {type:'sometype',when:'recent'}  
    when=recent
 
-  //************\*\*\*\*************\_\_\_************\*\*\*\*************
   import {useSearchParams} from 'react-router-dom';
 
   export function someComponent(){
