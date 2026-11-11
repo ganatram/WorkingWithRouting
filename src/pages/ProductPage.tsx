@@ -8,9 +8,9 @@ type Params = {
 export function ProductPage() {
   const params = useParams<Params>(); //  {id:1}
   //console.log(params);
-  const id = params.id === undefined ? undefined : parseInt(params.id);
+  const id = params.id === undefined ? undefined : parseInt(params.id); // 1
   const requiredProduct = products.find((product) => product.id === id);
-  //console.log(requiredProduct);
+  console.log(requiredProduct);
   return (
     <div>
       {requiredProduct === undefined ? (
